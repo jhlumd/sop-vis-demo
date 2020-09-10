@@ -60,8 +60,7 @@ const avgDurationData = [];
 let avgIdx = 0;
 for (const sopId in completedSopsAverageDuration) {
   if (completedSopsAverageDuration.hasOwnProperty(sopId)) {
-    const milliseconds = completedSopsAverageDuration[sopId];
-    const minutes = milliseconds / 1000 / 60;
+    const minutes = completedSopsAverageDuration[sopId] / 1000 / 60;
     // fixme: not the best way to find the title of the SOP by sopId below:
     avgDurationData.push([mary.logStats.sopStats[avgIdx].sopTitle, minutes]);
     avgIdx++;
