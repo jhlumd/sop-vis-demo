@@ -1,6 +1,6 @@
 const mary = {
   sopsCompleted: 9,
-  sopsInitiated: 0,
+  sopsInitiated: 4,
   completedSopsAverageDuration: {
     "9e68dd60-97af-43de-9ec0-cbee4f6e5b1a": 288759,
     "3ae25631-4059-4d9d-8e56-ec804b867130": 34728227,
@@ -11,7 +11,7 @@ const mary = {
     Tuesday: 1,
     Friday: 3,
   },
-  initiatedSopsForWeekday: {},
+  initiatedSopsForWeekday: { Wednesday: 2, Monday: 1, Tuesday: 1 },
   logStats: {
     userId: "59ac01e6-bbbb-41f7-bb20-25010998401c",
     sopStats: [
